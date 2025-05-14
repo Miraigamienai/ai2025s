@@ -154,7 +154,8 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      此次作業要使用提示詞來透過模型生出圖片，感覺好新鮮，只要輸入一堆文字，等待他跑好就可以
+      有很精緻的圖片生出來了。
     </div>
   </div>
 
@@ -170,22 +171,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成ComfyUI建置</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 完成芙莉蓮文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 替換模型完成辛梅爾文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,18 +196,54 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+            <img src="ComfyUI.jpg" width="100%"/>
+        </figure>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty"> 
+      <figure>
+        <figcaption>完成芙莉蓮Checkpoint、LoRA文生圖</figcaption>
+        <a href="https://civitai.com/models/1188071?modelVersionId=1337429">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/1209474/a4-test?modelVersionId=1373925">LoRA連結</a>
+        <p>1344 * 768</p>
+        <p>LoRA Strength : 1.0</p>
+        <p>Positive：masterpiece, best quality, high score, great score, absurdres, 1girl (Frieren), 1boy (Himmel), pointy ears, long white hair, flower head wreath, blue flower, smile, earrings, jewelry, shirt, elf, looking at each other, outdoors, green eyes (Freiren), brown eyes (Himmel), upper body, long sleeves, striped shirt, striped, sky, solo focus on both characters, closed mouth, falling petals, peaceful atmosphere, serene expression, lush greenery, soft light, high-quality details, mutual connection, heartfelt moment.
+        </p>
+        <p>Negative：owres, bad anatomy, bad hands, text, error, missing finger, extra digits, fewer digits, cropped, worst quality, low quality, low score, bad score, average score, signature, watermark, username, blurry
+        </p>
+        <img src="img1.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>替換Ckeckpoint、LoRA完成辛梅爾文生圖</figcaption>
+        <a href="https://civitai.com/models/10466/checkpoint-ligne-clair-stylecogecha">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/177943/frieren-frieren-beyond-journeys-end">LoRA連結</a>
+        <p>512 * 512</p>
+        <p>LoRA Strength : 1.0</p>
+        <p>masterpiece, best quality, high score, great score, absurdres, 1girl (Frieren), 1boy (Himmel), pointy ears, long white hair (Frieren), short brown hair (Himmel), flower head wreath, blue flower, smile, earrings, jewelry, shirt, elf, looking at each other with affection, gentle hand placement (Frieren’s hand resting on Himmel’s shoulder), Himmel reaching out towards Frieren, a shared moment of quiet connection, outdoor setting, lush greenery, falling petals, green eyes (Frieren), brown eyes (Himmel), upper body, long sleeves, striped shirt, soft light, sky in the background, peaceful and intimate atmosphere, mutual understanding and fondness in their expressions, eyes locked in a soft gaze, closed mouths, shared warmth, serene expressions, warm breeze flowing through their hair.
+        </p>
+        <p>ugly, distorted, low resolution, blurry, extra limbs, poorly drawn hands, missing fingers, bad anatomy, overexposed, pixelated, text, watermark, signature, username, artifacts, glitches, unnatural proportions, low-quality textures, noise.
+        </p>
+        <img src="img2.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
 
+  <!-- ------------------------------------------------>
 
 <script>
   $(function() {
